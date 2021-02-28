@@ -188,7 +188,7 @@ error_reporting(0);
                echo "</div>";
 
         }  else{
-          $det=mysqli_query($conn, "select * from masuk where id='$id_brg'")or die(mysql_error());
+          $det=mysqli_query($conn, "select * from masuk where id='$id_brg'")or die(mysqli_error());
           while($d=mysqli_fetch_array($det)){
             ?>
 
